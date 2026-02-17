@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Saf<span>eena</span></a>
+
+        <nav class="nav">
+          <ul>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </header>
+    <main id="home">
+      <!-- about -->
+      <section id="about">
+        <div class="container about-wrap">
+          <div class="about-left">
+            <p class="about-hi">Hi</p>
+
+            <h1 class="about-title">
+              I’m <span>Safeena</span><br />
+              a Frontend Developer
+            </h1>
+
+            <p class="about-desc">
+              I build clean and responsive websites using HTML, CSS, and
+              JavaScript. I enjoy creating modern UI designs and improving user
+              experience with smooth layouts and animations.
+            </p>
+
+            <div class="about-actions">
+              <a class="btn btn-dark" href="#contact">Hire Me</a>
+              <a class="btn btn-orange" href="#projects">Experience</a>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="profile-circle">
+              <img
+                class="profile-img"
+                src="images/safeena-profile-photo.png"
+                alt="Safeena profile photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects -->
+      <section id="projects">
+        <div class="container projects-wrap">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Here are a few projects I built while learning frontend development.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <img
+                class="project-img"
+                src="images/project-1-image.jpg"
+                alt="Portfolio Website preview"
+              />
+              <div class="project-body">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-desc">
+                  A responsive personal portfolio built using HTML and CSS with
+                  a clean layout and hover effects.
+                </p>
+                <a class="btn btn-outline project-link" href="#"
+                  >View Project</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-img"
+                src="images/project-2-image.jpg"
+                alt="Layout using flexbox preview"
+              />
+              <div class="project-body">
+                <h3 class="project-title">Flexbox Layout</h3>
+                <p class="project-desc">
+                  A Responsive UI using Flexbox, spacing, and smooth hover
+                  transitions for a better user experience.
+                </p>
+                <a class="btn btn-outline project-link" href="#"
+                  >View Project</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-img"
+                src="images/project-3-image.jpg"
+                alt="Contact Form UI preview"
+              />
+              <div class="project-body">
+                <h3 class="project-title">Contact Form UI</h3>
+                <p class="project-desc">
+                  A styled contact form layout with clear input fields, focus
+                  states, and a neat submit button design.
+                </p>
+                <a class="btn btn-outline project-link" href="#"
+                  >View Project</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section id="contact">
+        <div class="container contact-wrap">
+          <h2 class="contact-title">Contact <span>Me</span></h2>
+
+          <form class="contact-form">
+            <!-- Full Name -->
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Full Name"
+              required
+              minlength="3"
+              maxlength="40"
+            />
+
+            <!-- Email -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              maxlength="60"
+            />
+
+            <!-- Phone -->
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+              inputmode="numeric"
+              pattern="[0-9]{10}"
+              minlength="10"
+              maxlength="10"
+            />
+
+            <!-- Subject -->
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+              minlength="3"
+              maxlength="60"
+            />
+
+            <!-- Message -->
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+              minlength="10"
+              maxlength="500"
+            ></textarea>
+
+            <button class="contact-btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div class="footer-social">
+          <a
+            class="social-icon"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            class="social-icon"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            class="social-icon"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="social-icon" href="https://x.com/" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+
+        <p class="footer-copy">© 2026 Safeena | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
